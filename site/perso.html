@@ -6,9 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
 		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-   		<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">  
+   	<link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">  
 		<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    	<script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     	
     	<style type="text/css">
     	      /* Large desktop */
@@ -22,6 +22,7 @@
        .linediv-r {
          border-left: 1px white solid;
        }
+
       }
 
       /* Landscape phones and down */
@@ -34,6 +35,9 @@
        }
        .linediv-r {
          border-top: 1px white solid;
+       }
+       img {
+       display: none;  
        }
       }
 
@@ -71,7 +75,7 @@
       .video, .thermometer, .order, .social, .statistics {
         text-align: center;
       }
-      .statistics h3, .statistics p {
+      .statistics h5, .statistics p {
         color: white;
       }
 
@@ -99,11 +103,12 @@
         width:180px;
         margin: 0 auto;
       }
-      	</style>
+    </style>
 	</head>
 
 
 	<body>
+    <!--  navbar -->
 		<div class="navbar navbar-fixed-top">
 			<div class="navbar-inner">
 				<div class="container">
@@ -123,17 +128,65 @@
 				</div>
 			</div>
 		</div>
+
+    <!-- container titre -->
 		<div class="container">
-			<div class="row-fluid heading">
+			<div class="row-fluid heading"> <!-- responsive row dans container pour titre -->
 				<div class="span12">
 		        <h1>Mes Blagues</h1>
-		    	</div>
 		    </div>
-		    <div class="row fluid subheading">
-		    	<div class="span12">
-		    
-		   		</div>
-			</div>
+		  </div>
 		</div>
 
+    <!-- container pour modèle blague -->
+    <div class="container">
+      <!-- # + titre blague -->
+      <div class="row-fluid">
+        <div class"span12">
+          <div class-"row-fluid">
+            <div class="span1">
+              <p>#</p>
+            </div>
+            <div class="span11">
+              <div class="row-fluid">
+                <div class="span11 lead">
+                  <p>TITRE</p>
+                </div>
+              </div>
+            </div>
+      <!-- Image + corps blague -->
+        <div class="row-fluid">
+          <div class="span1">
+            <img class="img-polaroid" alt="Placeholder" src="http://placehold.it/80x80">
+          </div>
+          <div class="span11">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu adipiscing velit, non iaculis mi. Aenean nec enim convallis dui placerat sollicitudin non id lorem. Vivamus facilisis, </p>
+          </div>
+        </div>
+      <!-- satistiques de la blague -->
+          <div class="row-fluid">
+            <div class="span2 offset1">
+              <!-- linediv-l and linediv-r give dividing lines that look
+              different in horizontal and vertical layouts, illustrating
+              media queries. -->
+              <div class="linediv-l">
+              <p>12 likes</p>
+              </div>
+            </div>
+            <div class="span6">
+              <div class="linediv-c">
+                <p>#hihi #hoho</p>
+              </div>
+            </div>
+            <div class="span2">
+              <div class="linediv-r">
+              <p>10 vues</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 	</body>
+</html>
